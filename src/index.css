@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.grid {
+  box-sizing: content-box;
+  line-height: 0;
+  margin: auto;
+  padding: 5px;
+  margin-top: 10px;
+}
+.navbar-brand {
+  display: block;
+  justify-content: left;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+.navbar-custom {
+  background-color: #34495E;
+  z-index: 1;
+  box-shadow: 0px 6px 5px 0px rgba(45,48,56,1);
+  color: #fff;
+  padding-left: 20px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  display: block;  
+  height: fit-content;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-custom {
+  margin-right: 20px;
+  border-radius: 8px;
+  background-color: #1ABC9C;
+  color: #FFF;
+}
+
+.btn-custom:hover {
+  background-color: #46e6c6;
+  color: #FFF;
+}
+
+.nav-link {
+  margin-right: 20px;
+  color: #FFF;
+}
+
+.nav-link:hover {
+  color: #1ABC9C;
+}
+
+.nav-link:focus {
+  color:#1ABC9C;
+}
+
+.nav-link.disabled {
+  color:#7a95a3;
+}
+.dropdown-menu {
+  border-radius: 10px;
+  background-color: #34495E;
+  padding: 2px;
+}
+
+.dropdown-item {
+  border-radius: 8px;
+  color:#FFF;
+}
+
+.dropdown-item:hover {
+  color:#FFF;
+  background-color: #1ABC9C;
+}
+/*
+.cell {
+  width: 15px;
+  height: 15px;
+  background-color: #FFF;
+  padding: 0;
+  display: inline-block;
+
+  border: 1px solid #1ABC9C;
+  margin-right: 0;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+*/
+.cell-on {
+  box-sizing: content-box;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  border: 1px solid #34495E;
+  background-color: #0C3547;
+  
+}
+
+.cell-off {
+  box-sizing: content-box;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding: 0;
+  margin:0;
+  margin-left: -1px;
+  margin-bottom: -1px;
+  border: 1px solid #1ABC9C;
+  background-color: #FFF;
+}
+
+@keyframes cell-on-anim {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 15px;
+    height: 15px;
+  }
 }
