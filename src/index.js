@@ -132,14 +132,14 @@ class Main extends React.Component {
 
   constructor() {
     super();
-    this.rows = 30;
-    this.cols = 80;
+    this.rows = Math.floor((window.innerHeight - 100) / 16 - 1);
+    this.cols = Math.floor((window.innerWidth - 2) / 16);
     this.state = {
       grid: Array(this.rows).fill().map(() => Array(this.cols).fill(false)),
       running: false
     };
   }
-
+  
   render() {
     return (
       <div id='main'>

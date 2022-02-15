@@ -16,6 +16,7 @@ class Grid extends Component {
         }
 
         const width = this.props.cols * 16;
+        const heigh = this.props.rows * 16;
         return (
             <div draggable='false' className='grid' style={{ width: width }}>
                 {cells}
