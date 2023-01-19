@@ -1,4 +1,4 @@
-# Game of Life simulation beginner project in Reactjs
+# Game of Life simulation project in Reactjs
 
 
 <h3>Conway's Game of Life simulation</h3>
@@ -16,5 +16,5 @@ The board is populated with cells, and on each step the board's configuration is
 3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
 <h4>Note</h4>
-This is a rough miniproject that I made while experimenting with Reactjs basics.
+This is a rough miniproject that I made while revising React fundamentals.
 As a result, it is neither clean nor optimized.
